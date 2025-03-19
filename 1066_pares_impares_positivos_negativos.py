@@ -1,5 +1,4 @@
-#The numbers should be entered with spaces to distinguish them as separate.
-n = list(map(float, input().split()))
+n = list(map(int, input().split()))
 pos = 0
 neg = 0
 par = 0
