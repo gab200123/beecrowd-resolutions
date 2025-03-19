@@ -1,31 +1,20 @@
-n = list(map(int, input().split()))
+n = [int(input()) for _ in range(5)]
+
 pos = 0
 neg = 0
 par = 0
 impar = 0
 
 for num in n:
-  if num > 0:
-    pos += 1
-    
-    if num % 2 == 0:
-      par += 1
-
-    else:
-      impar += 1
-
-  elif num < 0:
-    neg += 1
+    if num > 0:
+        pos += 1
+    elif num < 0:
+        neg += 1
 
     if num % 2 == 0:
-      par += 1
-
+        par += 1
     else:
-      impar += 1
-
-  else:
-    par += 1
-
+        impar += 1
 
 print(f'{par} valor(es) par(es)')
 print(f'{impar} valor(es) impar(es)')
