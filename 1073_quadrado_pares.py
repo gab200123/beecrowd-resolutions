@@ -1,21 +1,14 @@
-qtd = int(input())
-entrada = None
-valor = []
-cont = 0
-n_cont = 0
-tenta = 0
+def bora(valor):
+    for i in range(2,valor+2,2):
+        quadrado = i ** 2
+        print(f'{i}^2 = {quadrado}')    
 
-for i in range(0,qtd):
-    entrada = int(input())
-    valor.append(entrada)
+valor = int(input())
+par = 0
 
-    if 10 <= valor[tenta] <= 20:
-        cont += 1
+if valor % 2 == 0:
+    bora(valor)
 
-    else:
-        n_cont += 1
-
-    tenta += 1
-
-print(f'{cont} in')
-print(f'{n_cont} out')
+else:
+    valor -= 1
+    bora(valor)
